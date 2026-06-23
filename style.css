@@ -8,12 +8,12 @@
 
 .header {
     width: 100%;
+    max-width: 1440px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    /* padding-left: 114px; */
-    /* gap: 70px; */
+    /* justify-content: center; */
+    padding-left: 140px;
+    gap: 100px;
 }
 
 .header-logo {
@@ -24,7 +24,7 @@
 }
 
 .nav-bar {
-    width: 100%;
+    width: 650px;
     display: flex;
 }
 
@@ -37,6 +37,8 @@
 
 .nav-bar a {
     font-size: 30px;
+    color: white;
+    text-decoration: none;
 }
 
 .nav-bar-mobile {
