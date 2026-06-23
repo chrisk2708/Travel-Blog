@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    padding-left: 140px;
     gap: 100px;
 }
 
@@ -21,6 +20,7 @@
     width: 72px;
     /* padding-right: 68px; */
     display: flex;
+    padding-left: 140px;
 }
 
 .nav-bar {
@@ -58,6 +58,7 @@
         justify-content: space-around;
         background: rgba(241, 201, 83, 1);
         padding: 24px 25px;
+        /* left: 0; */
     }
 
     .nav-bar-mobile > ul {
@@ -67,5 +68,13 @@
         justify-content: space-around;
         align-items: center;
         list-style-type: none;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header-logo {
+        padding-left: 0%;
     }
 }
