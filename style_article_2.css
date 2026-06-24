@@ -1,6 +1,7 @@
 .blog {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
@@ -15,16 +16,16 @@
     justify-content: space-between;
     /* align-items: center; */
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
 }
 
 .blog-text {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black; */
+    align-items: flex-start;
     float: left;
     width: 75%;
-    height: 390px;
+    /* height: 390px; */
 }
 
 .blog-text h3 {
@@ -125,4 +126,29 @@
 
 .author-text p {
     padding-top: 16px;
+}
+
+.text-placeholder p {
+    display: flex;
+    text-align: left;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    max-width: 1440px;
+}
+
+.video-section {
+    width: 931px;
+    height: 520px;
+    border-radius: 53px;
+    overflow: hidden;
+    position: relative;
+    margin: 88px;
+}
+
+.video-section iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }
