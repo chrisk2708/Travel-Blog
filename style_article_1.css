@@ -4,8 +4,8 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
-
 .main-content {
     width: 100%;
     max-width: 1440px;
@@ -13,6 +13,163 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.text-über-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 88px 0px;
+
+    p {
+        font-size: 24px;
+        font-family: "palanquin";
+        font-weight: 500;
+        text-align: center;
+        line-height: 110%;
+    }
+}
+.h2-rakete {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    img {
+        width: 39px;
+        height: 39px;
+    }
+    h2 {
+        font-size: 52px;
+        font-family: "arima";
+        font-style: semibold;
+        font-weight: 600;
+        line-height: 120%;
+        color: rgba(78, 164, 135, 1);
+    }
+}
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    background: black;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+    border-top-right-radius: 100px;
+
+    input {
+        z-index: 2;
+    }
+
+    input[value="one"]:checked ~ .wrapper {
+        transform: translateX(0);
+    }
+
+    input[value="two"]:checked ~ .wrapper {
+        transform: translateX(-25%);
+    }
+
+    input[value="three"]:checked ~ .wrapper {
+        transform: translateX(-50%);
+    }
+
+    input[value="four"]:checked ~ .wrapper {
+        transform: translateX(-75%);
+    }
+
+    .wrapper {
+        width: 400%;
+        position: absolute;
+        left: 0;
+
+        display: flex;
+        height: 100%;
+        transition: all 1s ease-in-out;
+
+        z-index: 1;
+
+        .element {
+            height: 100%;
+            width: calc(100% / 3);
+        }
+        h2 {
+            font-size: 48px;
+            font-family: "palanquin-dark";
+            font-style: semibold;
+            font-weight: 600;
+            line-height: 100%;
+        }
+        p {
+            font-size: 28px;
+            font-family: "palanquin";
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%;
+        }
+
+        #div1 {
+            /* background: black; */
+            background-image: url("./assets/img/slider_1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .slider-text {
+                width: 74%;
+            }
+        }
+
+        #div2 {
+            /* background: yellow; */
+            background-image: url("./assets/img/slider_2.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .slider-text {
+                width: 80%;
+            }
+        }
+
+        #div3 {
+            /* background: blue; */
+            background-image: url("./assets/img/slider_3.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .slider-text {
+                width: 77%;
+            }
+        }
+        #div4 {
+            /* background: red; */
+            background-image: url("./assets/img/slider_4.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .slider-text {
+                width: 45%;
+            }
+        }
+    }
+}
+.slider-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-top-right-radius: 50px;
+    height: fit-content;
+    gap: 8px;
+    margin-top: 54px;
+    margin-left: 38px;
+    padding: 16px 24px;
 }
 .article-text {
     display: flex;
@@ -25,6 +182,7 @@ body {
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
+    padding-top: 88px;
 }
 
 .article-text img {
@@ -64,68 +222,132 @@ body {
     padding-top: 88px;
     padding-bottom: 474px;
 }
-
-.a1-slider {
-    width: 50px;
-    background: black;
-    height: 50px;
-
+.blog {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    /* padding: 24px 15px 0px 15px; */
+    gap: 48px;
+    /* background-color: aqua; */
+    /* height: 390px; */
+}
+
+.blog-article {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 88px;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    float: left;
+    width: 75%;
+    height: 389px;
+}
+
+.blog-text h3 {
+    font-family: "Palanquin";
+    font-weight: 600;
+    font-size: clamp(1.25rem, 5vw, 2.5rem);
+    color: rgba(78, 164, 135, 1);
+    line-height: 120%;
+}
+
+.blog-text h2 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    color: rgba(241, 201, 83, 1);
+    line-height: 100%;
+    padding-top: 8px;
+}
+
+.blog-text p {
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 32px;
+    color: rgba(84, 55, 13, 1);
+    line-height: 120%;
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+.meta {
+    display: flex;
+    gap: 32px;
+}
+
+.meta-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+    line-height: 120%;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.meta-data img {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+}
 
-    overflow: hidden;
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(78, 164, 135, 0.2);
+    padding: 16px 8px;
+    gap: 16px;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+    /* height: 390px; */
+    /* border: 1px solid black; */
+    float: left;
+    width: 20%;
+}
 
-    input {
-        z-index: 2;
-    }
+.author-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
-    input[value="one"]:checked ~ .wrapper {
-        transform: translateX(0);
-    }
+.author-card h4 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: clamp(1rem 5vw 1.125rem);
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+}
 
-    input[value="two"]:checked ~ .wrapper {
-        transform: translateX(-25%);
-    }
+.author-card h5 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-size: clamp(1rem 5vw 1.125rem);
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+}
 
-    input[value="three"]:checked ~ .wrapper {
-        transform: translateX(-50%);
-    }
-
-    input[value="four"]:checked ~ .wrapper {
-        transform: translateX(-75%);
-    }
-
-    .slider-wrapper {
-        width: 400%;
-        position: absolute;
-        left: 0;
-
-        display: flex;
-        height: 100%;
-        transition: all 1s ease-in-out;
-
-        z-index: 1; /* kann man auch weg lassen btw */
-
-        .element {
-            height: 100%;
-            width: calc(100% / 3);
-        }
-
-        #div1 {
-            background: black;
-        }
-
-        #div2 {
-            background: yellow;
-        }
-
-        #div3 {
-            background: blue;
-        }
-
-        #div4 {
-            background: red;
-        }
-    }
+.author-text p {
+    padding-top: 16px;
 }
