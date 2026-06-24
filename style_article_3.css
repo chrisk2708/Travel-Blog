@@ -1,0 +1,62 @@
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-all {
+    width: 100%;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.diagram-card-wrapper {
+    /* width: 1200px; */
+
+    display: flex;
+    justify-content: center;
+    padding: 0px 41px 88px;
+    gap: 80px;
+}
+
+.diagram-card {
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diagram-card h3 {
+    font-size: 32px;
+    font-family: "Arima";
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.diagram-card p {
+    font-size: 24px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.diagram-card img {
+    width: 520px;
+    height: 470px;
+    /* box-shadow:
+        -1px 1px 3px rgba(3, 7, 18, 0.03),
+        -3px 3px 11px rgba(3, 7, 18, 0.06),
+        -6px 6px 25px rgba(3, 7, 18, 0.08),
+        -10px 10px 44px rgba(3, 7, 18, 0.11); */
+}
+
+.p-unter-diagramme {
+    font-size: 24px;
+    font-family: "Palanquin";
+    font-weight: 400;
+    line-height: 120%;
+}
