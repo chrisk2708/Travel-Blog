@@ -14,7 +14,7 @@
 .blog-article {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    padding-top: 80px;
     width: 100%;
     max-width: 1440px;
 }
