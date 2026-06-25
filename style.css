@@ -306,7 +306,8 @@ details[open].card > summary::after {
     .faq {
         padding: 0 20px;
     }
-}.landing-page {
+}
+.landing-page {
     height: 128px;
     width: 100%;
     background: rgba(78, 164, 135, 1);
@@ -385,4 +386,29 @@ details[open].card > summary::after {
     .header-logo {
         padding-left: 0%;
     }
+}
+
+.hero {
+    height: 520px;
+    width: 100%;
+    max-width: 1440px;
+    background-image: url(./assets/img/header\ photo.png);
+}
+
+.yellow-box {
+    height: 540px;
+    width: 640px;
+    background: rgba(241, 201, 83, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yellow-box div {
+    height: 230px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
