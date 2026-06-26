@@ -18,10 +18,10 @@
 }
 
 .diagram-card-wrapper {
-    /* width: 1200px; */
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0px 41px 88px;
+    padding: 0px 0px 88px;
     gap: 80px;
 }
 
@@ -52,13 +52,6 @@
     height: 470px;
 }
 
-.p-unter-diagramme {
-    font-size: 24px;
-    font-family: "Palanquin";
-    font-weight: 400;
-    line-height: 120%;
-}
-
 .wrapper-graph-diagram {
     width: 100%;
     max-width: 1440px;
@@ -76,8 +69,8 @@
     /* width: 100%; */
     font-size: 24px;
     font-family: "Palanquin";
-    /* font-style: normal;
-    font-weight: 400; */
+    font-style: normal;
+    font-weight: 400;
     line-height: 120%;
 
     padding-bottom: 88px;
@@ -104,6 +97,7 @@ figure {
     box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
     border: 53px;
     border-radius: 6%;
+    margin-bottom: 88px;
 }
 .blog {
     display: flex;
@@ -230,4 +224,21 @@ figure {
 
 .author-text p {
     padding-top: 16px;
+}
+
+.p-text {
+    font-size: 24px;
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+@media screen and (max-width: 1120px) {
+    .diagram-card-wrapper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

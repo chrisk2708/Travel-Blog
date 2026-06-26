@@ -30,7 +30,7 @@
     text-decoration: none;
 }
 
-.footer-desktop-left {
+/* .footer-desktop-left {
     width: 375px;
     font-size: 16px;
 
@@ -44,7 +44,7 @@
     color: white;
     font-size: 16px;
     text-decoration: none;
-}
+} */
 
 .copyright {
     width: 180px;
@@ -74,7 +74,7 @@
     align-items: center;
 }
 
-.social-media-icons-desktop {
+/* .social-media-icons-desktop {
     height: 24px;
     width: 150px;
     display: flex;
@@ -90,7 +90,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #TikTok-Button {
     height: 24px;
@@ -180,16 +180,21 @@
         font-weight: 400;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 60px 120px;
     }
 
     .footer-desktop-left {
         width: 600px;
-        max-width: 1440px;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        gap: 72px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-desktop-left a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
     }
 
     .footer-desktop-left p {
@@ -198,6 +203,23 @@
 
     .copyright img {
         width: 20px;
+    }
+
+    .social-media-icons-desktop {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .social-media-icons-desktop img {
+        height: 32px;
+    }
+
+    .social-media-icons-desktop a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 body {
@@ -341,14 +363,13 @@ details[open].card > summary::after {
 .header-logo {
     height: 72px;
     width: 72px;
-    /* padding-right: 68px; */
+
     display: flex;
-    padding-left: 140px;
 }
 
 .nav-bar {
     /* height: 5dvh; */
-    width: 100%;
+    width: 60%;
     display: flex;
 }
 
@@ -362,6 +383,9 @@ details[open].card > summary::after {
 
 .nav-bar a {
     font-size: 30px;
+    font-family: "Arima";
+    font-style: normal;
+    font-weight: 700;
     color: white;
     text-decoration: none;
 }
