@@ -10,14 +10,123 @@
         <title>BLOG - Artikel 3</title>
     </head>
     <body>
+        <section class="landing-page">
+            <header class="header">
+                <div class="header-logo">
+                    <img src="./assets/icons/Favicon.png" alt="Favicon" />
+                </div>
+                <!-- Desktop-Version-->
+                <nav class="nav-bar">
+                    <ul>
+                        <li><a href="index.html">Highlights</a></li>
+                        <li><a href="article_1.html">Artikel 1</a></li>
+                        <li><a href="article_2.html">Artikel 2</a></li>
+                        <li><a href="article_3.html">Artikel 3</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile-Version-->
+                <nav class="nav-bar-mobile">
+                    <ul>
+                        <li>
+                            <a class="home" href="index.html"
+                                ><img
+                                    src="./assets/icons/home.svg"
+                                    alt="Home Icon"
+                            /></a>
+                        </li>
+                        <li>
+                            <a class="rocket" href="article_1.html"
+                                ><img
+                                    src="./assets/icons/rocket_launch.svg"
+                                    alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="article_2.html"
+                                ><img src="./assets/icons/live_help.svg" alt=""
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="article_3.html"
+                                ><img
+                                    src="./assets/icons/person_pin.svg"
+                                    alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
         <main class="main-content">
+            <section class="blog">
+                <article class="blog-article">
+                    <div class="blog-text">
+                        <h3>Where the Ocean Meets Your Soul</h3>
+                        <h2>The World’s Most Breathtaking Beaches</h2>
+                        <p>
+                            From powder-soft white sands to dramatic coastlines
+                            kissed by turquoise waves, these beaches are more
+                            than destinations — they’re feelings.
+                        </p>
+                        <div class="meta">
+                            <div class="meta-data">
+                                <img
+                                    src="./assets/icons/calendar_month.svg"
+                                    alt="Calendar Icon"
+                                />
+                                <span>Date: 26.01.2026</span>
+                            </div>
+                            <div class="meta-data">
+                                <img
+                                    src="./assets/icons/eyeglasses.svg"
+                                    alt="Eyeglasses Icon"
+                                />
+                                <span>Reading Time: 6 min</span>
+                            </div>
+                            <div class="meta-data">
+                                <img
+                                    src="./assets/icons/visibility.svg"
+                                    alt="Visibility Icon"
+                                />
+                                <span>Read: 164</span>
+                            </div>
+                            <div class="meta-data">
+                                <img
+                                    src="./assets/icons/share.svg"
+                                    alt="Share Icon"
+                                />
+                                <span>Shared: 18</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="author-card">
+                        <img
+                            src="./assets/img/author.png"
+                            alt="Bild vom Author"
+                        />
+                        <div class="author-text">
+                            <h4>Tamara Wallker</h4>
+                            <h5>Author</h5>
+                            <p>
+                                I've been traveling since 2017, chasing moments
+                                instead of plans. I'm fascinated by snakes, love
+                                sharks, would happily spend weeks deep in the
+                                jungle, and can never get enough papaya. As long
+                                as there's a next destination, I know I'm
+                                exactly where I'm meant to be.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
             <div class="wrapper-graph-diagram">
                 <section class="graph-diagram-section">
                     <figure>
                         <h4 class="h4-rain">Rain periods in Pattaya</h4>
                         <img
-                        src="./assets/img/Rain Graph.png"
-                        alt="Bild mit Diagramm"
+                            src="./assets/img/Rain Graph.png"
+                            alt="Bild mit Diagramm"
                         />
                     </figure>
 
@@ -26,12 +135,12 @@
                         vestibulum malesuada. Ante in commodo porta scelerisque
                         turpis gravida semper. Lorem ipsum dolor sit amet
                         consectetur. Egestas a enim vestibulum malesuada. Eta
-                        scelerisque turpis gravida semper. </br> 
-                        Lorem ipsum dolor sit
-                        ameta enim vestibulum malesuada. Ante intrew commodo porta
-                        scelerisque turpis. ipsum dolor sit amet consectetur.
-                        Egestas a enim vestibulum malesuada. Ante in commodo porta
-                        scelerisque turpis gravida semper.
+                        scelerisque turpis gravida semper. <br />
+                        Lorem ipsum dolor sit ameta enim vestibulum malesuada.
+                        Ante intrew commodo porta scelerisque turpis. ipsum
+                        dolor sit amet consectetur. Egestas a enim vestibulum
+                        malesuada. Ante in commodo porta scelerisque turpis
+                        gravida semper.
                     </p>
                 </section>
             </div>
@@ -62,7 +171,8 @@
                                 bulum malesuada. Ante in commodo porta sceleri
                                 sque turpis gravida semper. Lorem ipsum dolor
                                 sit amet consectetur.
-                            </p> </br> 
+                            </p>
+                            <br />
                         </div>
                         <img
                             src="./assets/img/Graph 02.png"
@@ -90,5 +200,109 @@
                 </article>
             </div>
         </main>
+        <!-- Desktop Version-->
+        <footer class="footer-desktop">
+            <div class="wrapper-footer-desktop">
+                <div class="footer-desktop-left">
+                    <div class="copyright">
+                        <img
+                            src="./assets/icons/copyright.svg"
+                            alt="copyright"
+                        />
+                        <p>Travel Blog 2026</p>
+                    </div>
+                    <a href="impressum.html" target="_blank">Impressum</a>
+                    <a href="#">Cookie Preferences</a>
+                </div>
+                <div class="social-media-icons-desktop">
+                    <a
+                        id="TikTok-Button"
+                        href="https://www.tiktok.com/de-DE/"
+                        target="_blank"
+                        ><img
+                            id="TikTok-Icon"
+                            src="./assets/icons/TikTok.svg"
+                            alt="TikTok Icon"
+                    /></a>
+                    <a
+                        id="Youtube-Button"
+                        href="https://www.youtube.com/"
+                        target="_blank"
+                        ><img
+                            id="Youtube-Icon"
+                            src="./assets/icons/Youtube.svg"
+                            alt="Youtube Icon"
+                    /></a>
+                    <a
+                        id="Facebook-Button"
+                        href="https://de-de.facebook.com/"
+                        target="_blank"
+                        ><img
+                            id="Facebook-Icon"
+                            src="./assets/icons/Facebook.svg"
+                            alt="Facebook Icon"
+                    /></a>
+                    <a
+                        id="Instagram-Button"
+                        href="https://www.instagram.com/"
+                        target="_blank"
+                        ><img
+                            id="Instagram-Icon"
+                            src="./assets/icons/Instagram.svg"
+                            alt="Instagram Icon"
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Mobile Version-->
+        <footer class="footer-mobile">
+            <div class="footer-mobile-left">
+                <a href="impressum.html" target="_blank">Impressum</a>
+                <a href="#">Cookie Preferences</a>
+                <div class="copyright">
+                    <img src="./assets/icons/copyright.svg" alt="copyright" />
+                    <p>Travel Blog 2026</p>
+                </div>
+            </div>
+            <div class="social-media-icons-mobile">
+                <a
+                    id="TikTok-Button"
+                    href="https://www.tiktok.com/de-DE/"
+                    target="_blank"
+                    ><img
+                        id="TikTok-Icon"
+                        src="./assets/icons/TikTok.svg"
+                        alt="TikTok Icon"
+                /></a>
+                <a
+                    id="Youtube-Button"
+                    href="https://www.youtube.com/"
+                    target="_blank"
+                    ><img
+                        id="Youtube-Icon"
+                        src="./assets/icons/Youtube.svg"
+                        alt="Youtube Icon"
+                /></a>
+                <a
+                    id="Facebook-Button"
+                    href="https://de-de.facebook.com/"
+                    target="_blank"
+                    ><img
+                        id="Facebook-Icon"
+                        src="./assets/icons/Facebook.svg"
+                        alt="Facebook Icon"
+                /></a>
+                <a
+                    id="Instagram-Button"
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    ><img
+                        id="Instagram-Icon"
+                        src="./assets/icons/Instagram.svg"
+                        alt="Instagram Icon"
+                /></a>
+            </div>
+        </footer>
     </body>
 </html>
