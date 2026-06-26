@@ -465,14 +465,14 @@ details[open].card > summary::after {
 }
 
 @media screen and (min-width: 601px) {
-    hero img {
+    /* hero img {
         height: 160px;
         width: 160px;
         display: flex;
         /* justify-content: flex-end; */
 
         margin: 120px 10px 20px 70px;
-    }
+    } */
 
     .text {
         height: 230px;
