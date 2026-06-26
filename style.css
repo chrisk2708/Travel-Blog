@@ -469,10 +469,8 @@ details[open].card > summary::after {
         height: 160px;
         width: 160px;
         display: flex;
-        /* justify-content: flex-end; */
-
-        margin: 120px 10px 20px 70px;
-    } */
+        margin: 120px 10px 20px 70px; */
+    /* justify-content: flex-end; */
 
     .text {
         height: 230px;
