@@ -14,16 +14,130 @@ body {
     justify-content: center;
     align-items: center;
 }
+/* .blog {
+    display: flex;
+
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+} */
+.blog-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    gap: 26px;
+    padding-top: clamp(24px, calc(8px + 5vw), 80px);
+}
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+.blog-text h3 {
+    font-family: "Palanquin";
+    font-weight: 600;
+    font-size: clamp(1.25rem, 0.8929rem + 1.7857vw, 2.5rem);
+    color: rgba(78, 164, 135, 1);
+    line-height: 120%;
+}
+.blog-text h2 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: clamp(2.5rem, 2.0714rem + 2.1429vw, 4rem);
+    color: rgba(241, 201, 83, 1);
+    line-height: 100%;
+    padding-top: 8px;
+}
+.blog-text p {
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: clamp(1.125rem, 0.875rem + 1.25vw, 2rem);
+    color: rgba(84, 55, 13, 1);
+    line-height: 120%;
+    padding-top: 8px;
+    padding-bottom: 40px;
+}
+.meta {
+    display: flex;
+    gap: 32px;
+}
+.meta-data {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+    line-height: 120%;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.meta-data img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(78, 164, 135, 0.2);
+    padding: 16px 8px;
+    gap: 16px;
+    border-radius: 30px;
+    /* margin-bottom: 40px; */
+    font-family: "Palanquin";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+    height: 100%;
+    float: left;
+    width: 20%;
+}
+.author-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.author-card h4 {
+    font-family: "Arima";
+    font-weight: 700;
+    font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+}
+.author-card h5 {
+    font-family: "Arima";
+    font-weight: 400;
+    font-size: clamp(1rem, 0.9643rem + 0.1786vw, 1.125rem);
+    line-height: 120%;
+    color: rgba(84, 55, 13, 1);
+}
+.author-text p {
+    padding-top: 16px;
+}
 .text-über-slider {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 24px;
-    padding: 88px 0px;
+    padding-top: clamp(40px, calc(28.286px + 3.661vw), 81px);
+    padding-bottom: clamp(16px, calc(-4.571px + 6.429vw), 88px);
 
     p {
-        font-size: 24px;
+        font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
         font-family: "palanquin";
         font-weight: 500;
         text-align: center;
@@ -40,10 +154,10 @@ body {
         height: 39px;
     }
     h2 {
-        font-size: 52px;
+        font-size: clamp(2.5rem, 2.2857rem + 1.0714vw, 3.25rem);
         font-family: "arima";
-        font-style: semibold;
-        font-weight: 600;
+        font-style: bold;
+        font-weight: 700;
         line-height: 120%;
         color: rgba(78, 164, 135, 1);
     }
@@ -95,14 +209,14 @@ body {
             width: calc(100% / 3);
         }
         h2 {
-            font-size: 48px;
+            font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
             font-family: "palanquin-dark";
             font-style: semibold;
             font-weight: 600;
             line-height: 100%;
         }
         p {
-            font-size: 28px;
+            font-size: clamp(1.25rem, 1.1071rem + 0.7143vw, 1.75rem);
             font-family: "palanquin";
             font-style: normal;
             font-weight: 400;
@@ -180,20 +294,30 @@ body {
     font-family: "Palanquin";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
     line-height: 120%;
-    padding-top: 88px;
+    padding-top: clamp(40px, calc(26.286px + 4.286vw), 88px);
 }
-
 .article-text img {
-    transform: translateX(-485px) translateY(42px);
+    z-index: 2;
+    position: absolute;
+    left: -47px;
+    transform: translateY(-94px);
+    /* transform: translateX(-485px) translateY(24px); */
+}
+.pro-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 65px;
+    padding-left: 47px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 .pro-tipps {
     background-color: rgba(78, 164, 135, 0.2);
-    padding: 25px 16px 25px 50px;
+    padding: 26px 16px 24px 48px;
     border-radius: 30px;
-    width: 1083px;
-    height: 195px;
+    width: 98%;
 
     span {
         font-weight: 700;
@@ -201,8 +325,9 @@ body {
     }
 }
 .article-list {
-    width: 1000px;
-    height: 261px;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: clamp(32px, calc(16px + 5vw), 88px);
 
     span {
         font-weight: 700;
@@ -212,341 +337,51 @@ body {
     p {
         padding-bottom: 16px;
     }
-    padding-bottom: 88px;
 }
 .article-text > p {
-    padding-bottom: 88px;
+    padding-bottom: clamp(32px, calc(16px + 5vw), 88px);
 }
-
 .article-p {
-    padding-top: 88px;
-    padding-bottom: 322px;
+    padding-top: clamp(56px, calc(46.857px + 2.857vw), 88px);
+    padding-bottom: clamp(300px, calc(293.714px + 1.964vw), 322px);
 }
-.blog {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1440px;
-    /* padding: 24px 15px 0px 15px; */
-    gap: 48px;
-    /* background-color: aqua; */
-    /* height: 390px; */
-}
-
-.blog-article {
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    width: 100%;
-    max-width: 1440px;
-    padding-top: 88px;
-}
-
-.blog-text {
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid black; */
-    float: left;
-    width: 75%;
-    height: 389px;
-}
-
-.blog-text h3 {
-    font-family: "Palanquin";
-    font-weight: 600;
-    font-size: clamp(1.25rem, 5vw, 2.5rem);
-    color: rgba(78, 164, 135, 1);
-    line-height: 120%;
-}
-
-.blog-text h2 {
-    font-family: "Arima";
-    font-weight: 700;
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    color: rgba(241, 201, 83, 1);
-    line-height: 100%;
-    padding-top: 8px;
-}
-
-.blog-text p {
-    font-family: "Palanquin";
-    font-weight: 400;
-    font-size: 32px;
-    color: rgba(84, 55, 13, 1);
-    line-height: 120%;
-    padding-top: 8px;
-    padding-bottom: 24px;
-}
-
-.meta {
-    display: flex;
-    gap: 32px;
-}
-
-.meta-data {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-family: "Palanquin";
-    font-weight: 400;
-    font-size: 1rem;
-    color: rgba(84, 55, 13, 1);
-    line-height: 120%;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-}
-
-.meta-data img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.author-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(78, 164, 135, 0.2);
-    padding: 16px 8px;
-    gap: 16px;
-    border-radius: 30px;
-    margin-bottom: 40px;
-    font-family: "Palanquin";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: rgba(84, 55, 13, 1);
-    /* height: 390px; */
-    /* border: 1px solid black; */
-    float: left;
-    width: 20%;
-}
-
-.author-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.author-card h4 {
-    font-family: "Arima";
-    font-weight: 700;
-    font-size: clamp(1rem 5vw 1.125rem);
-    line-height: 120%;
-    color: rgba(84, 55, 13, 1);
-}
-
-.author-card h5 {
-    font-family: "Arima";
-    font-weight: 400;
-    font-size: clamp(1rem 5vw 1.125rem);
-    line-height: 120%;
-    color: rgba(84, 55, 13, 1);
-}
-
-.author-text p {
-    padding-top: 16px;
-}
-
-.footer-mobile {
-    height: fit content;
-    width: 100%;
-    background-color: rgba(78, 164, 135, 1);
-    color: white;
-    font-size: 16px;
-    padding: 30px 24px;
-    font-family: "Palanquin";
-    font-style: normal;
-    font-weight: 400;
-
-    display: flex;
-    align-items: flex-end;
-}
-
-.footer-mobile-left {
-    width: 375px;
-    font-size: 16px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-mobile-left a {
-    height: 24px;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.footer-desktop-left {
-    width: 375px;
-    font-size: 16px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-desktop-left a {
-    height: 24px;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.copyright {
-    width: 180px;
-    display: flex;
-    gap: 4px;
-}
-
-.copyright img {
-    width: 16px;
-}
-
-.social-media-icons-mobile {
-    height: 24px;
-    width: 150px;
-    display: flex;
-    gap: 16px;
-    padding-bottom: 30px;
-}
-
-.social-media-icons-mobile img {
-    height: 24px;
-}
-
-.social-media-icons-mobile a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social-media-icons-desktop {
-    height: 24px;
-    width: 150px;
-    display: flex;
-    gap: 16px;
-    padding-bottom: 30px;
-}
-
-.social-media-icons-desktop img {
-    height: 24px;
-}
-
-.social-media-icons-desktop a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#TikTok-Button {
-    height: 24px;
-    width: 24px;
-    background: rgba(241, 201, 83, 1);
-    border-radius: 5px;
-}
-
-#Youtube-Button {
-    height: 24px;
-    width: 30px;
-    background: rgba(241, 201, 83, 1);
-    border-radius: 8px;
-}
-
-#Facebook-Button {
-    height: 24px;
-    width: 24px;
-    background: rgba(241, 201, 83, 1);
-    border-radius: 50px;
-}
-
-#Instagram-Button {
-    height: 24px;
-    width: 24px;
-    background: rgba(241, 201, 83, 1);
-    border-radius: 5px;
-}
-
-#TikTok-Icon {
-    height: 19px;
-    width: 16px;
-}
-
-#Youtube-Icon {
-    height: 14px;
-    width: 14px;
-}
-
-#Facebook-Icon {
-    height: 18px;
-    width: 10px;
-}
-
-#Instagram-Icon {
-    height: 17px;
-    width: 17px;
-}
-
-@media screen and (max-width: 600px) {
-    .footer-desktop {
-        display: none;
+@media screen and (max-width: 1425px) {
+    .main-content {
+        padding: 0px 15px;
     }
 }
-
-@media screen and (min-width: 601px) {
-    .footer-mobile {
-        display: none;
+@media screen and (max-width: 1000px) {
+    .blog-text {
+        width: 70%;
     }
-    .social-media-icons-mobile {
-        display: none;
+    .author-card {
+        width: 30%;
     }
-
-    footer {
-        width: 100%;
-        background-color: rgba(78, 164, 135, 1);
+    .article-list {
+        padding-left: 24px;
     }
-
-    .wrapper-footer-desktop {
-        width: 100%;
-        max-width: 1440px;
+}
+@media screen and (max-width: 768px) {
+    .blog-article {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
-
-    .footer-desktop {
-        height: fit content;
+    .blog-text {
         width: 100%;
-        color: white;
-        font-size: 16px;
-        padding: 30px 24px;
-        font-family: "Palanquin";
-        font-style: normal;
-        font-weight: 400;
-
-        display: flex;
-        justify-content: space-between;
-        padding: 60px 120px;
     }
-
-    .footer-desktop-left {
-        width: 600px;
-        max-width: 1440px;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        gap: 72px;
+    .author-card {
+        width: 100%;
     }
-
-    .footer-desktop-left p {
-        width: fit-content;
+    .text-über-slider p {
+        display: none;
     }
-
-    .copyright img {
-        width: 20px;
+}
+@media screen and (max-width: 845px) {
+    .meta {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .meta-data {
+        flex-wrap: nowrap;
     }
 }

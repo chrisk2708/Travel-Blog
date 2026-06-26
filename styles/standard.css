@@ -5,3 +5,6 @@
     scroll-behavior: smooth;
     position: relative;
 }
+html {
+    font-size: 16px;
+}
