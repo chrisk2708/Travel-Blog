@@ -11,7 +11,7 @@
 .blog-article {
     display: flex;
     justify-content: space-between;
-    padding: 80px 0 24px 0;
+    padding: clamp(24px, calc(8px + 5vw), 80px) 0 24px;
     width: 100%;
     max-width: 1440px;
     gap: 26px;
@@ -132,6 +132,7 @@
     color: rgba(84, 55, 13, 1); /*Secondary Brown */
     width: 100%;
     max-width: 1440px;
+    /* padding-top: 24px; */
 }
 
 .video-section {
@@ -268,7 +269,6 @@
 
         .author-card {
             width: 100%;
-            margin-bottom: 40px;
         }
 
         .meta {
