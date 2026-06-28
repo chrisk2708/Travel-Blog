@@ -220,6 +220,12 @@
     }
 }
 
+@media screen and (max-width: 1440px) {
+    .main-content {
+        padding: 0px 15px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
 
     .blog-text {
@@ -254,7 +260,6 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 0 15px;
 
         .blog-text {
             width: 100%;
@@ -271,19 +276,15 @@
         }
     }
 
-    .article-p {
-            padding: 0 15px;
-        }
-
     .article-text {
-        padding: 0 15px 290px;
+        padding-bottom: 410px;
     }
 
     .video-section {
         margin: 0;
 
         video {
-        padding: 24px 15px;
+        padding: 24px 0;
         }
     }
 
