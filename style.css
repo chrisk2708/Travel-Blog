@@ -9,6 +9,7 @@
     font-weight: 400;
 
     display: flex;
+    justify-content: center;
     align-items: flex-end;
     position: absolute;
     bottom: 5dvh;
@@ -24,22 +25,6 @@
 }
 
 .footer-mobile-left a {
-    height: 24px;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.footer-desktop-left {
-    width: 375px;
-    font-size: 16px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer-desktop-left a {
     height: 24px;
     color: white;
     font-size: 16px;
@@ -62,6 +47,12 @@
     display: flex;
     gap: 16px;
     padding-bottom: 30px;
+
+    @media screen and (max-width: 350px) {
+        height: 20px;
+        width: 100px;
+        gap: 2px;
+    }
 }
 
 .social-media-icons-mobile img {
@@ -74,7 +65,7 @@
     align-items: center;
 }
 
-.social-media-icons-desktop {
+/* .social-media-icons-desktop {
     height: 24px;
     width: 150px;
     display: flex;
@@ -90,7 +81,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 #TikTok-Button {
     height: 24px;
@@ -140,13 +131,13 @@
     width: 17px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .footer-desktop {
         display: none;
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 801px) {
     .footer-mobile {
         display: none;
     }
@@ -154,13 +145,13 @@
         display: none;
     }
 
-    footer {
+    /* footer {
         width: 100%;
         height: 5dvh;
         background-color: rgba(78, 164, 135, 1);
         position: absolute;
         bottom: 0;
-    }
+    } */
 
     .wrapper-footer-desktop {
         width: 100%;
@@ -170,6 +161,7 @@
     }
 
     .footer-desktop {
+        background-color: rgba(78, 164, 135, 1);
         height: fit content;
         width: 100%;
         color: white;
@@ -180,16 +172,23 @@
         font-weight: 400;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         padding: 60px 120px;
+        position: absolute;
+        bottom: 0;
     }
 
     .footer-desktop-left {
-        width: 600px;
-        max-width: 1440px;
-        flex-direction: row;
-        /* justify-content: space-between; */
-        gap: 72px;
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-desktop-left a {
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
     }
 
     .footer-desktop-left p {
@@ -198,6 +197,33 @@
 
     .copyright img {
         width: 20px;
+    }
+
+    .social-media-icons-desktop {
+        width: 150px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .social-media-icons-desktop img {
+        height: 32px;
+    }
+
+    .social-media-icons-desktop a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 960px) {
+        .footer-desktop-left {
+            width: 400px;
+        }
+    }
+
+    .copyright {
+        width: fit-content;
     }
 }
 body {
@@ -336,14 +362,13 @@ details[open].card > summary::after {
 .header-logo {
     height: 72px;
     width: 72px;
-    /* padding-right: 68px; */
+
     display: flex;
-    padding-left: 140px;
 }
 
 .nav-bar {
     /* height: 5dvh; */
-    width: 100%;
+    width: 60%;
     display: flex;
 }
 
@@ -357,15 +382,22 @@ details[open].card > summary::after {
 
 .nav-bar a {
     font-size: 30px;
+    font-family: "Arima";
+    font-style: normal;
+    font-weight: 700;
     color: white;
     text-decoration: none;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 24px;
+    }
 }
 
 .nav-bar-mobile {
     display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .nav-bar {
         display: none;
     }
@@ -380,6 +412,8 @@ details[open].card > summary::after {
         background: rgba(241, 201, 83, 1);
         padding: 24px 25px;
         /* left: 0; */
+
+        z-index: 1;
     }
 
     .nav-bar-mobile > ul {

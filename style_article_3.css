@@ -18,10 +18,10 @@
 }
 
 .diagram-card-wrapper {
-    /* width: 1200px; */
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: 0px 41px 88px;
+    padding: 0px 0px 88px;
     gap: 80px;
 }
 
@@ -32,31 +32,16 @@
     justify-content: space-between;
 }
 
-.diagram-card h3 {
-    font-size: 32px;
-    font-family: "Arima";
-    display: flex;
-    justify-content: center;
-    padding-bottom: 24px;
-}
-
-.diagram-card p {
+/* .diagram-card p {
     font-size: 24px;
     font-family: "Palanquin";
     font-weight: 400;
     line-height: 120%;
-}
+} */
 
 .diagram-card img {
     width: 520px;
     height: 470px;
-}
-
-.p-unter-diagramme {
-    font-size: 24px;
-    font-family: "Palanquin";
-    font-weight: 400;
-    line-height: 120%;
 }
 
 .wrapper-graph-diagram {
@@ -74,9 +59,9 @@
 
 .graph-diagram-section p {
     /* width: 100%; */
-    font-size: 24px;
+    /* font-size: 24px;
     font-family: "Palanquin";
-    /* font-style: normal;
+    font-style: normal;
     font-weight: 400; */
     line-height: 120%;
 
@@ -89,12 +74,15 @@ figure {
     align-items: center;
 }
 
-.h4-rain {
+.h3 {
     font-size: 32px;
     padding-bottom: 24px;
     font-family: "Arima";
     font-style: normal;
     font-weight: 600;
+
+    display: flex;
+    justify-content: center;
 }
 
 .graph-diagram-section img {
@@ -104,7 +92,14 @@ figure {
     box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
     border: 53px;
     border-radius: 6%;
+    margin-bottom: 88px;
 }
+
+/* #p-ganz-unten {
+    width: 100%;
+    padding-bottom: 322px;
+} */
+
 .blog {
     display: flex;
     flex-direction: column;
@@ -160,27 +155,30 @@ figure {
 }
 
 .meta {
+    width: 70%;
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* gap: 32px; */
 }
 
 .meta-data {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     font-family: "Palanquin";
     font-weight: 400;
     font-size: 1rem;
     color: rgba(84, 55, 13, 1);
     line-height: 120%;
     gap: 6px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 24px;
 }
 
 .meta-data img {
     display: flex;
     flex-direction: row;
+
     justify-content: center;
     align-items: center;
 }
@@ -230,4 +228,160 @@ figure {
 
 .author-text p {
     padding-top: 16px;
+}
+
+.p-text {
+    font-size: 24px;
+    font-family: "Palanquin";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-content {
+        padding: 0px 15px;
+    }
+
+    #p-ganz-unten {
+        width: 100%;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    #text-kreisdiagram {
+        margin-bottom: 16px;
+    }
+
+    .diagram-card-wrapper {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .diagram-card {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #p-ganz-unten {
+        width: 100%;
+        padding-bottom: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 260px) {
+    .blog {
+        padding: 0px 0px 32px;
+        gap: 0;
+    }
+
+    .blog-article {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author-card {
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .blog-text {
+        height: fit-content;
+        width: 100%;
+        padding-top: 24px;
+    }
+
+    .blog-text p {
+        font-size: 22px;
+    }
+
+    /* .main-content {
+        padding-top: 0px;
+    } */
+
+    /* figure {
+        padding: 0px 15px;
+    } */
+
+    .graph-diagram-section img {
+        margin-bottom: 32px;
+    }
+
+    .graph-diagram-section p {
+        padding-bottom: 32px;
+    }
+
+    .h3 {
+        padding-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .meta {
+        height: fit-content;
+        width: 55%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .diagram-card-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 32px;
+        gap: 32px;
+    }
+
+    #text-kreisdiagram {
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .meta {
+        height: fit-content;
+        width: 70%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .blog-text p {
+        font-size: 18px;
+    }
+
+    .graph-diagram-section img {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .diagram-card img {
+        height: fit-content;
+        width: 100%;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    .p-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .meta {
+        height: fit-content;
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
 }
