@@ -357,10 +357,6 @@ body {
     .author-card {
         width: 30%;
     }
-    .article-list {
-        padding-left: 24px;
-        /* kontrolle ob nötig */
-    }
 }
 @media screen and (max-width: 860px) {
     .meta {
