@@ -451,7 +451,7 @@ details[open].card > summary::after {
 
         .element {
             height: 100%;
-            width: calc(100% / 3);
+            width: calc(100% / 4);
         }
         h2 {
             font-size: clamp(1.75rem, 1.3929rem + 1.7857vw, 3rem);
@@ -469,7 +469,6 @@ details[open].card > summary::after {
         }
 
         #div1 {
-            /* background: black; */
             background-image: url("./assets/img/slider_1.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -481,7 +480,6 @@ details[open].card > summary::after {
         }
 
         #div2 {
-            /* background: yellow; */
             background-image: url("./assets/img/slider_2.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -493,7 +491,6 @@ details[open].card > summary::after {
         }
 
         #div3 {
-            /* background: blue; */
             background-image: url("./assets/img/slider_3.jpg");
             background-position: center;
             background-repeat: no-repeat;
@@ -504,7 +501,6 @@ details[open].card > summary::after {
             }
         }
         #div4 {
-            /* background: red; */
             background-image: url("./assets/img/slider_4.jpg");
             background-position: center;
             background-repeat: no-repeat;
