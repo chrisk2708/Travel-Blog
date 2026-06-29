@@ -345,7 +345,7 @@ details[open].card > summary::after {
     max-width: 1440px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
+    justify-content: center;
     gap: 100px;
 }
 
@@ -479,9 +479,9 @@ details[open].card > summary::after {
 @media screen and (min-width: 601px) {
     .wrapper-yellow-box {
         height: 540px;
-        width: 640px;
+        width: clamp(222px, calc(100.571px + 37.946vw), 647px);
         background-image: url(./assets/img/Vector\ 16.png);
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -496,7 +496,8 @@ details[open].card > summary::after {
         /* display: flex;
         align-items: center; */
 
-        margin: 140px 0px 0px 100px;
+        margin: clamp(40px, calc(11.429px + 8.929vw), 140px) 0 0
+            clamp(0px, calc(-28.571px + 8.929vw), 100px);
     }
 
     .text {
@@ -509,14 +510,14 @@ details[open].card > summary::after {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: clamp(1.875rem, 1.3571rem + 2.5893vw, 3.6875rem);
         font-family: "Arima";
         font-style: normal;
         font-weight: 700;
     }
 
     #p {
-        font-size: 28px;
+        font-size: clamp(1rem, 0.7857rem + 1.0714vw, 1.75rem);
         font-family: "Palanquin";
         font-style: normal;
         font-weight: 400;
