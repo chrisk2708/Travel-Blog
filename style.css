@@ -301,13 +301,15 @@ details[open].card > summary::after {
 }
 
 .hero {
-    height: 520px;
+    height: 540px;
     width: 100%;
     max-width: 1440px;
     background-image: url(./assets/img/header\ photo.png);
-    background-position: center;
+    background-position: 65% center;
     background-repeat: no-repeat;
     background-size: cover;
+    object-fit: cover;
+    object-position: center right;
 }
 
 .circle {
@@ -336,7 +338,7 @@ details[open].card > summary::after {
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
-        object-fit: cover;
+        /* object-fit: cover; */
         display: flex;
     }
 
@@ -833,5 +835,11 @@ details[open].card > summary::after {
         height: 20px;
         width: 110px;
         gap: 8px;
+    }
+
+    .copyright {
+        width: 140px;
+        display: flex;
+        gap: 2px;
     }
 }
