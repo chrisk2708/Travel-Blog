@@ -30,6 +30,12 @@
     text-decoration: none;
 }
 
+.footer-mobile-left a:hover {
+    color: rgba(241, 201, 83, 1);
+    text-shadow:
+    0 0 10px rgba(241, 201, 83, 0.5);
+}
+
 .copyright {
     width: 180px;
     display: flex;
@@ -58,23 +64,19 @@
     align-items: center;
 }
 
-/* .social-media-icons-desktop {
-    height: 24px;
-    width: 150px;
-    display: flex;
-    gap: 16px;
-    padding-bottom: 30px;
-}
-
-.social-media-icons-desktop img {
-    height: 24px;
+.social-media-icons-mobile a:hover {
+    transform: scale(1.2);
 }
 
 .social-media-icons-desktop a {
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+} 
+
+.social-media-icons-desktop a:hover{
+    transform: scale(1.2);
+}
 
 #TikTok-Button {
     height: 24px;
@@ -248,19 +250,17 @@ details[open].card > summary::after {
     max-width: 1440px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 100px;
 }
 
 .header-logo {
     height: 72px;
     width: 72px;
-
+    padding-left: 25px;
     display: flex;
 }
 
 .nav-bar {
-    /* height: 5dvh; */
     width: 60%;
     display: flex;
 }
@@ -280,14 +280,26 @@ details[open].card > summary::after {
     font-weight: 700;
     color: white;
     text-decoration: none;
+    transition: all 0.5s;
+    position: relative;
 
     @media screen and (max-width: 1000px) {
         font-size: 24px;
     }
 }
 
+.nav-bar a:hover {
+    color: rgba(241, 201, 83, 1);
+    text-shadow:
+        0 0 10px rgba(241, 201, 83, 0.5);
+}
+
 .nav-bar-mobile {
     display: none;
+}
+
+.nav-bar-mobile img:hover {
+    transform: scale(1.2);
 }
 
 .hero {
@@ -299,13 +311,25 @@ details[open].card > summary::after {
     background-repeat: no-repeat;
     background-size: cover;
 
-    /* transform: scale(1) translateX(5px); */
 }
 
 .circle {
     height: 160px;
     width: 160px;
     display: flex;
+    top: -4%;
+    left: 13%;
+
+    animation: kreisen 4s linear infinite;
+}
+
+@keyframes kreisen {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
 }
 @media screen and (max-width: 600px) {
     .wrapper-yellow-box {
@@ -563,17 +587,22 @@ details[open].card > summary::after {
 @media screen and (max-width: 1440px) {
     .main-content {
         padding: 0 15px;
-        }
+    }
 
     .footer-desktop-left {
         width: 100%;
         height: 24px;
         gap: 72px;
     }
+
+    .footer-desktop-left a:hover {
+        color: rgba(241, 201, 83, 1);
+        text-shadow:
+        0 0 10px rgba(241, 201, 83, 0.5);
+    }
 }
 
 @media screen and (max-width: 960px) {
-
     .wrapper-footer-desktop {
         width: 100%;
         max-width: 1440px;
@@ -613,6 +642,12 @@ details[open].card > summary::after {
         text-decoration: none;
         width: 100%;
         white-space: nowrap;
+    }
+
+    .footer-desktop-left a:hover {
+        color: rgba(241, 201, 83, 1);
+        text-shadow:
+        0 0 10px rgba(241, 201, 83, 0.5);
     }
 
     .footer-desktop-left p {
@@ -674,6 +709,12 @@ details[open].card > summary::after {
         text-decoration: none;
         width: 100%;
         white-space: nowrap;
+    }
+
+    .footer-desktop-left a:hover {
+        color: rgba(241, 201, 83, 1);
+        text-shadow:
+        0 0 10px rgba(241, 201, 83, 0.5);
     }
 
     .footer-desktop-left p {
@@ -753,7 +794,7 @@ details[open].card > summary::after {
     }
 
     .header-logo {
-        padding-left: 0%;
+        padding-left: 0;
     }
 }
 
@@ -809,7 +850,6 @@ details[open].card > summary::after {
 }
 
 @media screen and (max-width: 640px) {
-
     .wrapper-yellow-box {
         height: 290px;
         width: 220px;
@@ -841,7 +881,7 @@ details[open].card > summary::after {
     .text-über-slider {
         padding: 80px 0 32px;
     }
-    
+
     .text-über-slider p {
         display: none;
     }
