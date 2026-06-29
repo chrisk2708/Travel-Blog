@@ -256,7 +256,7 @@ details[open].card > summary::after {
 .header-logo {
     height: 72px;
     width: 72px;
-
+    padding-left: 25px;
     display: flex;
 }
 
@@ -701,7 +701,7 @@ details[open].card > summary::after {
     }
 
     .header-logo {
-        padding-left: 0%;
+        padding-left: 0;
     }
 }
 
