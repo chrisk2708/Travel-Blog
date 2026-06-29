@@ -32,8 +32,7 @@
 
 .footer-mobile-left a:hover {
     color: rgba(241, 201, 83, 1);
-    text-shadow:
-    0 0 10px rgba(241, 201, 83, 0.5);
+    text-shadow: 0 0 10px rgba(241, 201, 83, 0.5);
 }
 
 .copyright {
@@ -72,9 +71,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-} 
+}
 
-.social-media-icons-desktop a:hover{
+.social-media-icons-desktop a:hover {
     transform: scale(1.2);
 }
 
@@ -290,8 +289,7 @@ details[open].card > summary::after {
 
 .nav-bar a:hover {
     color: rgba(241, 201, 83, 1);
-    text-shadow:
-        0 0 10px rgba(241, 201, 83, 0.5);
+    text-shadow: 0 0 10px rgba(241, 201, 83, 0.5);
 }
 
 .nav-bar-mobile {
@@ -310,7 +308,6 @@ details[open].card > summary::after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .circle {
@@ -339,7 +336,7 @@ details[open].card > summary::after {
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
-
+        object-fit: cover;
         display: flex;
     }
 
@@ -359,56 +356,6 @@ details[open].card > summary::after {
     }
 }
 
-@media screen and (min-width: 601px) {
-    .wrapper-yellow-box {
-        height: 540px;
-        width: 640px;
-        background-image: url(./assets/img/Vector\ 16.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        display: flex;
-    }
-
-    .yellow-box {
-        height: 230px;
-        width: 350px;
-
-        margin: 140px 0px 0px 100px;
-    }
-
-    .text {
-        height: 100%;
-        width: 100%;
-
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-
-    h1 {
-        font-size: 60px;
-        font-family: "Arima";
-        font-style: normal;
-        font-weight: 700;
-    }
-
-    #p {
-        font-size: 28px;
-        font-family: "Palanquin";
-        font-style: normal;
-        font-weight: 400;
-        line-height: 110%;
-    }
-
-    .circle {
-        height: 160px;
-        width: 160px;
-        display: flex;
-        margin-top: 300px;
-    }
-}
 .slider-text {
     color: white;
     display: flex;
@@ -597,8 +544,7 @@ details[open].card > summary::after {
 
     .footer-desktop-left a:hover {
         color: rgba(241, 201, 83, 1);
-        text-shadow:
-        0 0 10px rgba(241, 201, 83, 0.5);
+        text-shadow: 0 0 10px rgba(241, 201, 83, 0.5);
     }
 }
 
@@ -646,8 +592,7 @@ details[open].card > summary::after {
 
     .footer-desktop-left a:hover {
         color: rgba(241, 201, 83, 1);
-        text-shadow:
-        0 0 10px rgba(241, 201, 83, 0.5);
+        text-shadow: 0 0 10px rgba(241, 201, 83, 0.5);
     }
 
     .footer-desktop-left p {
@@ -713,8 +658,7 @@ details[open].card > summary::after {
 
     .footer-desktop-left a:hover {
         color: rgba(241, 201, 83, 1);
-        text-shadow:
-        0 0 10px rgba(241, 201, 83, 0.5);
+        text-shadow: 0 0 10px rgba(241, 201, 83, 0.5);
     }
 
     .footer-desktop-left p {
@@ -801,9 +745,9 @@ details[open].card > summary::after {
 @media screen and (min-width: 641px) {
     .wrapper-yellow-box {
         height: 546px;
-        width: 640px;
+        width: clamp(280px, calc(193.103px + 31.034vw), 640px);
         background-image: url(./assets/img/Vector\ 16.png);
-        background-position: center;
+        background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -812,9 +756,10 @@ details[open].card > summary::after {
 
     .yellow-box {
         height: 230px;
-        width: 350px;
+        width: clamp(100px, calc(39.655px + 21.552vw), 350px);
 
-        margin: 140px 0px 0px 100px;
+        margin: clamp(40px, calc(15.862px + 8.621vw), 140px) 0 0
+            clamp(0px, calc(-24.138px + 8.621vw), 100px);
     }
 
     .text {
@@ -827,14 +772,14 @@ details[open].card > summary::after {
     }
 
     h1 {
-        font-size: 60px;
+        font-size: clamp(1.625rem, 1.0179rem + 3.0357vw, 3.75rem);
         font-family: "Arima";
         font-style: normal;
         font-weight: 700;
     }
 
     #p {
-        font-size: 28px;
+        font-size: clamp(1rem, 0.7857rem + 1.0714vw, 1.75rem);
         font-family: "Palanquin";
         font-style: normal;
         font-weight: 400;
@@ -873,7 +818,7 @@ details[open].card > summary::after {
         height: 160px;
         width: 160px;
         display: flex;
-        margin: 120px 0px 0px 70px;
+        margin: 120px 0px 0px 100px;
     }
 }
 
