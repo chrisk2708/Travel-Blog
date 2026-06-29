@@ -19,20 +19,20 @@ body {
         font-family: "Arima";
         font-style: Bold;
         font-weight: 700;
-        font-size: 3rem;
+        font-size: clamp(2rem, 1.7143rem + 1.4286vw, 3rem);
     }
     h3 {
         font-family: "Palanquin";
         font-style: SemiBOld;
         font-weight: 600;
-        font-size: 2rem;
+        font-size: clamp(1.5rem, 1.3571rem + 0.7143vw, 2rem);
     }
 
     h3 span {
         font-weight: normal;
     }
     h4 {
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
         font-family: "Palanquin";
         font-style: Normal;
         font-weight: 400;
@@ -41,7 +41,7 @@ body {
         font-weight: normal;
     }
     p {
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.5rem);
         font-family: "Palanquin";
         font-style: Normal;
         font-weight: 400;
