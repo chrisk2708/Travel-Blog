@@ -714,7 +714,7 @@ details[open].card > summary::after {
         padding: 24px 25px;
         /* left: 0; */
 
-        z-index: 1;
+        z-index: 3;
     }
 
     .nav-bar-mobile > ul {
@@ -742,7 +742,7 @@ details[open].card > summary::after {
 
 @media screen and (min-width: 641px) {
     .wrapper-yellow-box {
-        height: 546px;
+        height: 562px;
         width: clamp(280px, calc(193.103px + 31.034vw), 640px);
         background-image: url(./assets/img/Vector\ 16.png);
         background-position: right;
