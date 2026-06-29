@@ -67,7 +67,7 @@ body {
     font-size: 1rem;
     line-height: 120%;
     gap: 6px;
-    flex-wrap: wrap;
+    white-space: nowrap;
 }
 .meta-data img {
     display: flex;
@@ -350,11 +350,10 @@ body {
 }
 @media screen and (max-width: 845px) {
     .meta {
-        flex-wrap: wrap;
         gap: 8px;
     }
     .meta-data {
-        flex-wrap: nowrap;
+        white-space: nowrap;
     }
 }
 @media screen and (max-width: 600px) {
@@ -388,5 +387,8 @@ body {
     .article-text img {
         left: -3px;
         transform: translateY(-110px);
+    }
+    .article-p {
+        padding-top: 0;
     }
 }

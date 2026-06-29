@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
     padding-bottom: 322px;
 }
 
@@ -95,42 +94,37 @@ figure {
     margin-bottom: 88px;
 }
 
-/* #p-ganz-unten {
-    width: 100%;
-    padding-bottom: 322px;
-} */
-
 .blog {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     max-width: 1440px;
-    gap: 48px;
-    padding-bottom: 88px;
 }
 
 .blog-article {
     display: flex;
     justify-content: space-between;
+    padding: clamp(24px, calc(8px + 5vw), 80px) 0 24px;
     width: 100%;
     max-width: 1440px;
+    gap: 26px;
 }
 
 .blog-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid black; */
+    align-items: flex-start;
     float: left;
-    width: 75%;
-    height: 389px;
+    width: 80%;
 }
 
 .blog-text h3 {
     font-family: "Palanquin";
     font-weight: 600;
-    font-size: clamp(1.25rem, 5vw, 2.5rem);
+    font-size: clamp(1.25rem, 1.887vw + 0.802rem, 2.5rem);
     color: rgba(78, 164, 135, 1);
     line-height: 120%;
 }
@@ -138,7 +132,7 @@ figure {
 .blog-text h2 {
     font-family: "Arima";
     font-weight: 700;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.5rem, 2.264vw + 1.962rem, 4rem);
     color: rgba(241, 201, 83, 1);
     line-height: 100%;
     padding-top: 8px;
@@ -147,38 +141,35 @@ figure {
 .blog-text p {
     font-family: "Palanquin";
     font-weight: 400;
-    font-size: 28px;
+    font-size: clamp(1.125rem, 0.943vw + 0.901rem, 1.75rem);
     color: rgba(84, 55, 13, 1);
     line-height: 120%;
     padding-top: 8px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
 }
 
 .meta {
-    width: 70%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* gap: 32px; */
+    gap: 32px;
+    width: 100%;
 }
 
 .meta-data {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     font-family: "Palanquin";
     font-weight: 400;
     font-size: 1rem;
     color: rgba(84, 55, 13, 1);
     line-height: 120%;
     gap: 6px;
-    /* flex-wrap: wrap; */
-    margin-bottom: 24px;
+    white-space: nowrap;
 }
 
 .meta-data img {
     display: flex;
     flex-direction: row;
-
     justify-content: center;
     align-items: center;
 }
@@ -192,14 +183,11 @@ figure {
     padding: 16px 8px;
     gap: 16px;
     border-radius: 30px;
-    margin-bottom: 40px;
     font-family: "Palanquin";
     font-weight: 400;
-    font-size: 16px;
+    font-size: clamp(1rem, 0.189vw + 0.955rem, 1.125rem);
     line-height: 120%;
     color: rgba(84, 55, 13, 1);
-    /* height: 390px; */
-    /* border: 1px solid black; */
     float: left;
     width: 20%;
 }
@@ -213,7 +201,7 @@ figure {
 .author-card h4 {
     font-family: "Arima";
     font-weight: 700;
-    font-size: clamp(1rem 5vw 1.125rem);
+    font-size: clamp(1rem, 0.189vw + 0.955rem, 1.125rem);
     line-height: 120%;
     color: rgba(84, 55, 13, 1);
 }
@@ -221,13 +209,14 @@ figure {
 .author-card h5 {
     font-family: "Arima";
     font-weight: 400;
-    font-size: clamp(1rem 5vw 1.125rem);
+    font-size: 1rem;
     line-height: 120%;
     color: rgba(84, 55, 13, 1);
 }
 
 .author-text p {
     padding-top: 16px;
+    font-size: 1rem;
 }
 
 .p-text {
@@ -236,6 +225,7 @@ figure {
     font-style: normal;
     font-weight: 400;
     line-height: 120%;
+    padding-bottom: 88px;
 }
 
 @media screen and (max-width: 1440px) {
@@ -324,11 +314,13 @@ figure {
 
 @media screen and (max-width: 800px) {
     .meta {
-        height: fit-content;
-        width: 55%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: 450px;
+    }
+
+    .p-text {
+        padding-bottom: 32px;
     }
 
     .diagram-card-wrapper {
@@ -345,16 +337,13 @@ figure {
 }
 
 @media screen and (max-width: 640px) {
-    .meta {
-        height: fit-content;
-        width: 70%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    }
 
     .blog-text p {
         font-size: 18px;
+    }
+
+    .meta {
+        width: 100%;
     }
 
     .graph-diagram-section img {
@@ -373,15 +362,5 @@ figure {
 
     .p-text {
         font-size: 16px;
-    }
-}
-
-@media screen and (max-width: 504px) {
-    .meta {
-        height: fit-content;
-        width: 100%;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
     }
 }
